@@ -6,7 +6,7 @@ var Fire = function(){
   this.discipline   = "Fire";
   this.description  = "Fire is destruction magic";
   this.spells       = {};
-} 
+}; 
 Fire.prototype = autor;
 
 var fireSchool = new Fire();
@@ -25,6 +25,6 @@ schoolReview = function(){
   console.log("Welcome to the school of  "+(fireSchool.discipline.toLowerCase()) +" magic! "+fireSchool.description );
   for(key in fireSchool.spells){
   console.log(fireSchool.spells[key])
-  }};
+}};
   
 schoolReview()
