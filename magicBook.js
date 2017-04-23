@@ -11,7 +11,7 @@ Fire.prototype = autor;
 
 var fireSchool = new Fire();
 
-var Spells              = function(name, sD){
+var Spells = function(name, sD){
   this.spell            = name;
   this.spellDescription = sD;
 };
