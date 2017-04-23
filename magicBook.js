@@ -3,21 +3,21 @@ var autor ={
 };
 
 var Fire = function(){
-  this.discipline = "Fire";
-  this.description = "Fire is destruction magic";
-  this.spells = {};
+  this.discipline   = "Fire";
+  this.description  = "Fire is destruction magic";
+  this.spells       = {};
 } 
 Fire.prototype = autor;
 
 var fireSchool = new Fire();
 
-var Spells = function(name, sD){
-	this.spell = name;
+var Spells              = function(name, sD){
+  this.spell            = name;
   this.spellDescription = sD;
 };
 Spells.prototype = fireSchool;
 
-fireSchool.spells.firstSpell = new Spells("Fireball", "Classic spell of fire magic school");
+fireSchool.spells.firstSpell  = new Spells("Fireball", "Classic spell of fire magic school");
 fireSchool.spells.secondSpell = new Spells("Pyroblast","Giant fire boulder");
 
 schoolReview = function(){
