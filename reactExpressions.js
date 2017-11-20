@@ -8,5 +8,10 @@ const Price = ({price, discount}) => (
 																				 `цена: ${price} песос`),
 										 )
 )
-
+Price.defaultProps = {price: 12,
+										 discount: 10};
+// Price.propTypes = {
+// 	price: PropTypes.number,
+// 	discount: PropTypes.number
+// };
 ReactDOM.render(React.createElement(Price, {price: 17, discount: 2}), document.getElementById('root'))
