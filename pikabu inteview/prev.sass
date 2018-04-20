@@ -1,0 +1,15 @@
+.example
+  li
+    &:first-child
+      font-weight: 600
+  ul li
+    &:nth-child(3)
+          li
+            font-weight: 400
+    li
+      list-style: none
+      &:before
+        content: '\2B25'
+        padding-right: 5px
+      &:after
+        content: ', 'attr(data-value)
